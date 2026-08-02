@@ -9,12 +9,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-mauve-500">
-    <main class="m-24 p-3">
-        <div class="bg-gray-900/30 p-3">
-            <h1 class="text-white font-bold text-3xl text-center">My To-Do List</h1>
+<body class="bg-mauve-500 min-h-screen">
+    <main class="m-4 sm:m-12 p-3">
+        <div class="bg-gray-900/30 p-3 ">
+            <h1 class="text-white font-bold text-3xl sm:text-3xl text-center m-6 md:m-12">My To-Do List</h1>
         </div>
-        <div class="m-8 p-4">
+        <div class="m-4 sm:m-8 p-4 space-y-3">
             <label for="taskInput" 
                 class="text-white font-mono font-semibold italic ">
                 Task<span class="font-normal">:</span>
@@ -22,15 +22,15 @@
             <input type="text"
                 id="taskInput" 
                 placeholder="Enter a task" 
-                class="bg-white italic p-1"
+                class="bg-white italic p-2 w-full sm:w-64 rounded-2xl"
             >
-            <button class="bg-gray-700/30 text-white rounded-lg text-sm px-3 py-1 mt-3 justify-center flex items-center text-center border border-purple-600" 
+            <button class="bg-gray-700/30 text-white rounded-2xl text-sm px-3 py-1 text-center border border-purple-600 w-full sm:w-auto" 
                 onclick="addTask()">
                     Add Task
             </button>
         </div>
-        <div class="max-w-full max-h-full bg-white border-l-3 border-dotted border-mauve-500 p-5">
-            <h2 class="text-center underline italic font-['Italianno'] text-2xl" >Task List</h2>
+        <div class="max-w-full max-h-full bg-white border-l-4 border-dotted border-mauve-500 p-5">
+            <h2 class="text-center underline italic font-['Italianno'] text-4xl sm:text-5xl" >Task List</h2>
             <ul id="taskList">
                 
             </ul>

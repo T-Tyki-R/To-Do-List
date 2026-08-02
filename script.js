@@ -7,7 +7,11 @@ const addTask = () => {
         return;
     }
     let li = document.createElement("li");
-    li.innerHTML = input + "<span onCLick='deleteTask(this)'>&times;</span>"
+
+    // Using tailwaind cdn to add a handwritten quality text to my input
+    li.className = "font-['Tangerine'] text-3xl sm:text-5xl text-gray-800 flex items-center justify-between";
+
+    li.innerHTML = input + "<span style='color:red;' onClick='deleteTask(this)'> &times;</span>";
     document.getElementById("taskList").appendChild(li);
     document.getElementById("taskInput").value = "";
     savaData();
